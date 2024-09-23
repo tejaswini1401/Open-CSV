@@ -2,10 +2,10 @@ package com.opencsv.OpenCsvReader;
 public class MyUser {
 	private String firstName;
 	private String email;
-	private int mobileNumber;
+	private String mobileNumber;
 	private String country;
 	
-	public MyUser(String firstName, String email, int mobileNumber, String country) {
+	public MyUser(String firstName, String email, String mobileNumber, String country) {
 		super();
 		this.firstName = firstName;
 		this.email = email;
@@ -24,10 +24,10 @@ public class MyUser {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getMobileNumber() {
+	public String getMobileNumber() {
 		return mobileNumber;
 	}
-	public void setMobileNumber(int mobileNumber) {
+	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
 	}
 	public String getCountry() {

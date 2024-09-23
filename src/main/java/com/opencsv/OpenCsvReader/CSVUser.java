@@ -4,72 +4,55 @@ import com.opencsv.bean.CsvBindByName;
 
 public class CSVUser {
 	
-	@CsvBindByName
-	private String name;
+	@CsvBindByName(column = "firstName")
+	private String firstName;
 	
-	@CsvBindByName (column = "email", required=true)
-	private String email;
+	@CsvBindByName (column = "Email")
+	private String Email;
 	
-	@CsvBindByName (column = "phone")
-	private String phoneNo;
+	@CsvBindByName (column = "mobileNumber")
+	private String PhoneNo;
 	
-	@CsvBindByName
-	private String country;
-	
-	
+	@CsvBindByName (column = "Country")
+	private String Country;
 
 	public String getName() {
-		return name;
+		return firstName;
 	}
-
-
 
 	public void setName(String name) {
-		this.name = name;
+		firstName = name;
 	}
-
-
 
 	public String getEmail() {
-		return email;
+		return Email;
 	}
-
-
 
 	public void setEmail(String email) {
-		this.email = email;
+		Email = email;
 	}
-
-
 
 	public String getPhoneNo() {
-		return phoneNo;
+		return PhoneNo;
 	}
-
-
 
 	public void setPhoneNo(String phoneNo) {
-		this.phoneNo = phoneNo;
+		PhoneNo = phoneNo;
 	}
-
-
 
 	public String getCountry() {
-		return country;
+		return Country;
 	}
-
-
 
 	public void setCountry(String country) {
-		this.country = country;
+		Country = country;
 	}
-
-
 
 	@Override
 	public String toString() {
-		return "CSVUser [name=" + name + ", email=" + email + ", phoneNo=" + phoneNo + ", country=" + country + "]";
+		return "CSVUser [Name=" + firstName + ", Email=" + Email + ", PhoneNo=" + PhoneNo + ", Country=" + Country + "]";
 	}
+	
 	
 	
 }
