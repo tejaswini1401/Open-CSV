@@ -17,8 +17,8 @@ public class OpenCSVWriter {
 	public static void main(String[] args) {
 		
 		List<MyUser> myUsers = Arrays.asList(
-				new MyUser("Tejaswini", "tejaswini@gmail.com", 302342131,"India"),
-				new MyUser("Shreya","shreya@gmail.com", 1234567809,"India")
+				new MyUser("Tejaswini", "tejaswini@gmail.com", "302342131","India"),
+				new MyUser("Shreya","shreya@gmail.com", "1234567809","India")
 			);
 		
 		try (Writer writer = Files.newBufferedWriter(Paths.get(OBJECT_LIST_SAMPLE))) {

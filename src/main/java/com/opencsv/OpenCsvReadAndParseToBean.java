@@ -12,7 +12,7 @@ import com.opencsv.bean.*;
 
 public class OpenCsvReadAndParseToBean {
 	
-	private static final String CSV_FILE_PATH = "./users-with-headers";
+	private static final String CSV_FILE_PATH = "./object-list-sample.csv";
 
 	public static void main(String[] args) throws IOException {
 		
